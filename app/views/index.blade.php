@@ -63,13 +63,18 @@
                             <li class="race_information">
                                 <h3 class="garchig">
                                     {{$i}}. {{ $race->age }}
-
                                     <?php $stat = $race->status() ?>
-
                                     @if ($stat['state']=='F')
                                     <span>| Өндөрлөсөн</span>
                                     @elseif ($stat['state']=='P')
                                     <span>| Товлогдсон</span>
+                                        @if ($stat['time']<86400)
+                                        <span class="pendingTime">
+                                            <span class="hour">{{ intval(($stat['time']/3600)) }}</span>"
+                                            <span class="minute">{{ intval(($stat['time']%3600)/60) }}</span>'
+                                            <span class="second">{{ intval(($stat['time']%3600)%60) }}</span>
+                                        </span>
+                                        @endif
                                     @else
                                     <span>| Одоо уралдаж байна</span>
                                     @endif
@@ -114,6 +119,13 @@
                                     <span>| Өндөрлөсөн</span>
                                     @elseif ($stat['state']=='P')
                                     <span>| Товлогдсон</span>
+                                        @if ($stat['time']<86400)
+                                        <span class="pendingTime">
+                                            <span class="hour">{{ intval(($stat['time']/3600)) }}</span>"
+                                            <span class="minute">{{ intval(($stat['time']%3600)/60) }}</span>'
+                                            <span class="second">{{ intval(($stat['time']%3600)%60) }}</span>
+                                        </span>
+                                        @endif
                                     @else
                                     <span>| Одоо уралдаж байна</span>
                                     @endif

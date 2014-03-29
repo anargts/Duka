@@ -42,6 +42,7 @@ class TestController extends BaseController{
     //$race = Race::find(2);
     //$stat = $race->status();
     //return $stat;
-    return date('Y-m-d H:i:s');
+    //return date('Y-m-d H:i:s');
+    return Race::all();
   }
 }
