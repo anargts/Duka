@@ -14,9 +14,11 @@
                     <div class="news_info">
                         <span><strong>{{ $news->cMonth() }}.{{ $news->cDay() }}</strong> / {{ $news->cYear() }}</span>
                         <span class="news_category">
-                            <a href="#category">
-                                {{ HTML::image("img/news/news_star.png") }}
-                            </a>
+                            @if ($news->type==1)
+                                <a href="#category">{{ HTML::image('img/news/news_video.png') }}</a>
+                            @else
+                                <a href="#category">{{ HTML::image('img/news/news_doc.png') }}</a>
+                            @endif
                         </span>
                     </div>
                 </div>
