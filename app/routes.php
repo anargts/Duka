@@ -84,3 +84,7 @@ Route::group(array('prefix' => 'mobile'), function(){
     'uses' => 'Mobile\Controller\HomeController@getTrainerHorse'
   ));
 });
+
+Route::get("fuckyou", function(){
+  return "Fuck you";
+});
