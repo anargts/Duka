@@ -11,7 +11,7 @@
 					<div class="carousel-inner">
 						<div class="item active">
 							<div class="soon-header">
-								<h4>Товлогдсон уралдаан <span class="race_name">| Улсын баяр наадам</span></h4>
+                                <h4>Товлогдсон уралдаан <span class="race_name">| Улсын баяр наадам</span></h4>
 							</div>
 							<ul>
                                 <?php $i=0 ?>

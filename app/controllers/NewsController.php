@@ -4,7 +4,7 @@ class NewsController extends BaseController{
 
     public function getIndex()
     {
-        $fnews = News::find(11);
+        $fnews = News::find(9);
         $news = News::all();
         $ulsRace = Race::Uls();
         $aimagRace = Race::Aimag();

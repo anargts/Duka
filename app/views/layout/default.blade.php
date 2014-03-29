@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 <div class="login_submit">
-                    {{ Form::submit('Нэвтрэх',array('class' => 'btn btn-mail')) }}
+                    {{ Form::submit('Нэвтрэх',array('class' => 'btn')) }}
                 </div>
 
                 {{ Form::close() }}
