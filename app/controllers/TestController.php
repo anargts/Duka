@@ -33,11 +33,15 @@ class TestController extends BaseController{
     //$data = array();
     //$data['horses']=$user->Horses();
     //return $data;
-    $z = Race::tUls();
-    $data = array();
-    $data['now'] = date('Y-m-d');
-    $data['startDate'] = Race::find(1S)->startDate;
-    $data['startTime'] = Race::find(1)->startTime;
-    return $data;
+    //$z = Race::tUls();
+    //$data = array();
+    //$data['now'] = date('Y-m-d');
+    //$data['startDate'] = Race::find(1S)->startDate;
+    //$data['startTime'] = Race::find(1)->startTime;
+    //return $data;
+    //$race = Race::find(2);
+    //$stat = $race->status();
+    //return $stat;
+    return date('Y-m-d H:i:s');
   }
 }

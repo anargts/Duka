@@ -83,7 +83,14 @@
                             <li class="race_information">
                                 <h3 class="garchig">
                                     {{$i}}. {{ $race->age }}
+                                    <?php $stat = $race->status() ?>
+                                    @if ($stat['state']=='F')
                                     <span>| Өндөрлөсөн</span>
+                                    @elseif ($stat['state']=='P')
+                                    <span>| Товлогдсон</span>
+                                    @else
+                                    <span>| Одоо уралдаж байна</span>
+                                    @endif
                                 </h3> 
                                 <span class="mori">
                                     <strong>{{ $race->Horses->count() }}</strong> морьд
