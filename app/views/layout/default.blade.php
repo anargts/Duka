@@ -63,11 +63,11 @@
         </div>
     </div>
     <div id="hiddenform1" style="z-index: 9999;">
-        <div class="login_error">
-            <span>Таны нэр эсвэл нууц үг буруу байна. Дахин оролдож үзнэ үү.</span>
-        </div>
+            <div class="login_error">
+                <span>Таны нэр эсвэл нууц үг буруу байна. Дахин оролдож үзнэ үү.</span>
+            </div>
             {{ Form::open(array('role' => 'form', 'action' => 'AuthController@postSignin', 'id' => 'login-form') ) }}
-                <div class="form-group">
+            <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Нэр">
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Нууц үг">
                 </div>
